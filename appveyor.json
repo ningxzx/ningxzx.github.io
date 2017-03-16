@@ -1,1 +1,0 @@
-{"deploy":{"provider":"FTP","protocol":"ftp","host":"60.205.191.214","username":"webftp","password":{"secure":"PSTgzcogMszFKm0drUJ6eA=="},"folder":"/var/forldn/blog","draft":false,"active_mode":false}}
