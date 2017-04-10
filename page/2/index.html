@@ -301,6 +301,176 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.forldn.cn/posts/programming/2017-03-17-ubuntu上部署nodejs.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lu Danning">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="a glimps">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/posts/programming/2017-03-17-ubuntu上部署nodejs.html" itemprop="url">
+                  ubuntu上部署nodejs
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-17T15:37:08+00:00">
+                2017-03-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/programming/2017-03-17-ubuntu上部署nodejs.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="posts/programming/2017-03-17-ubuntu上部署nodejs.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/posts/programming/2017-03-17-ubuntu上部署nodejs.html" class="leancloud_visitors" data-flag-title="ubuntu上部署nodejs">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>在<a href="http://blog.forldn.cn/posts/uncategorized/2017-03-17-%E9%80%9A%E8%BF%87git-hooks%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2.html）中，需要打开网站根文件夹（cd $GIT_WORK_TREE">上文</a>安装好git hooks的脚本中需要对网站源文件进行build，当在bash脚本中执行node命令（npm install 和 npm run build）时,提示 node: command not found，于是开始在阿里云上部署nodejs。</p>
+<h2 id="尝试做法"><a href="#尝试做法" class="headerlink" title="尝试做法"></a>尝试做法</h2><ul>
+<li>首先想到的就是 ubuntu装包（apt-get install nodejs），node -v后显示版本为0.10.25，版本过低。<br>随后尝试了<br>  <pre><br>  curl -sL <a href="https://deb.nodesource.com/setup_7.x">https://deb.nodesource.com/setup_7.x</a> | sudo -E bash -<br>  sudo apt-get install -y nodejs<br>  </pre><br>nodejs -v，版本号依旧显示为0.10.25。并且bash也没有执行。<br>但是更主要的原因是，我不清楚ubuntu中有一个还是两个nodejs版本，这让强迫症的我很难受，想找一个清爽的解决办法。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/programming/2017-03-17-ubuntu上部署nodejs.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://blog.forldn.cn/posts/programming/2017-03-14-2月份工作总结.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -505,7 +675,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
